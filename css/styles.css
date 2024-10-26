@@ -1,0 +1,33 @@
+body {
+  background-color: #131312;
+  font-family: Montserrat, sans-serif;
+}
+#logoNav {
+  max-width: 40px;
+  background-color: #c6a42c;
+  padding: 10%;
+}
+#navbackgr {
+  background-color: #c6a42c;
+  border-radius: 10px;
+}
+#navbar {
+  color: #131312;
+  font-weight: bold;
+}
+.nav-link {
+  color: #131312;
+}
+.nav-link:hover {
+  color: white;
+}
+.nav-link:active {
+  background-color: #c6a42c;
+  color: #131312;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show .nav-link {
+  background-color: #131312;
+  color: #c6a42c;
+  border-radius: 0%;
+}
