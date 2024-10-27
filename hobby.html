@@ -21,37 +21,56 @@
   <body>
     <div class="row" id="navbackgr">
       <div class="col" id="navbar">
-        <nav class="nav nav-pills flex-column flex-sm-row">
-          <a href="#"
-            ><img id="logoNav" src="/project2/images/logo.PNG" alt="Logo"
-          /></a>
-          <a
-            class="flex-sm-fill text-sm-center nav-link"
-            href="/project2/index.html"
-            >Home</a
-          >
-          <a
-            class="flex-sm-fill text-sm-center nav-link active"
-            aria-current="page"
-            href="#"
-            >Hobby & Interesses</a
-          >
+        <nav class="navbar navbar-expand-md">
+          <a href="#" class="navbar-brand">
+            <img id="logoNav" src="/project2/images/logo.PNG" alt="Logo" />
+          </a>
 
-          <a
-            class="flex-sm-fill text-sm-center nav-link"
-            href="/project2/Curriculum.html"
-            >Curriculum</a
+          <!-- Hamburger Button for Small Screens -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-          <a
-            class="flex-sm-fill text-sm-center nav-link"
-            href="/project2/contact.html"
-            >Contact</a
-          >
-          <a
-            class="flex-sm-fill text-sm-center nav-link disabled"
-            aria-disabled="true"
-            >Projecten</a
-          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Links Wrapper -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <nav class="nav nav-pills flex-column flex-sm-row">
+              <a
+                class="flex-sm-fill text-sm-center nav-link"
+                href="/project2/index.html"
+                >Home</a
+              >
+              <a
+                class="flex-sm-fill text-sm-center nav-link active"
+                aria-current="page"
+                href="#"
+                >Hobby & Interesses</a
+              >
+
+              <a
+                class="flex-sm-fill text-sm-center nav-link"
+                href="/project2/Curriculum.html"
+                >Curriculum</a
+              >
+              <a
+                class="flex-sm-fill text-sm-center nav-link"
+                href="/project2/contact.html"
+                >Contact</a
+              >
+              <a
+                class="flex-sm-fill text-sm-center nav-link disabled"
+                aria-disabled="true"
+                >Projecten</a
+              >
+            </nav>
+          </div>
         </nav>
       </div>
     </div>

@@ -2,6 +2,7 @@ body {
   background-color: #131312;
   font-family: Montserrat, sans-serif;
 }
+/* CSS  Menubalk */
 #logoNav {
   max-width: 40px;
   background-color: #c6a42c;
@@ -9,7 +10,8 @@ body {
 }
 #navbackgr {
   background-color: #c6a42c;
-  border-radius: 10px;
+  border-radius: 0px;
+  max-height: 53px;
 }
 #navbar {
   color: #131312;
@@ -30,4 +32,44 @@ body {
   background-color: #131312;
   color: #c6a42c;
   border-radius: 0%;
+}
+/* Contactformulier*/
+/* Aangepaste stijl voor de submit-knop */
+.btn-primary {
+  background-color: #c6a42c;
+  border-color: #c6a42c;
+  color: #131312;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #c6a42c;
+  border-color: #c6a42c;
+  color: white;
+}
+/* Button color when clicked (active state) */
+.btn-primary:active,
+.btn-primary.active {
+  background-color: #131312 !important;
+  border-color: #c6a42c !important;
+  color: #c6a42c !important;
+}
+/* spaties in contactformulier */
+#contactForm .form-group {
+  margin-bottom: 15px;
+}
+/* max breedte contactformulier */
+.contact-wrap {
+  max-width: 800px;
+  margin: 0 auto;
+}
+/* waarschuwing bij niet invullen */
+#form-message-warning {
+  display: none;
+  color: red;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
