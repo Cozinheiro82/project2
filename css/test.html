@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Resume - Danny Veugelen</title>
+    <link rel="stylesheet" href="/project2/css/bootstrap.min.css" />
+
+    <style>
+      /* General page styling */
+      body {
+        background-color: #131312;
+        color: #f3f3ed;
+        font-family: Montserrat, sans-serif;
+      }
+
+      /* Main container styling */
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem;
+      }
+
+      /* Title styling */
+      h1,
+      h2 {
+        color: #f3f3ed;
+      }
+
+      /* Carousel styling */
+      .carousel .card {
+        background-color: #333;
+        color: #fff;
+        border: 1px solid #444;
+        border-radius: 8px;
+      }
+
+      .carousel .card-title {
+        color: #c6a42c;
+      }
+
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        background-color: #c6a42c;
+        border-radius: 50%;
+      }
+
+      .carousel-item {
+        padding: 2rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container my-5">
+      <h1 class="text-center mb-5">Online Resume - Danny Veugelen</h1>
+
+      <!-- Skill Carousel -->
+      <h2 class="text-center text-white">Mijn Vaardigheden</h2>
+      <div
+        id="skillCarousel"
+        class="carousel slide mt-4"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <!-- Carousel Item 1 -->
+          <div class="carousel-item active">
+            <div class="d-flex justify-content-center">
+              <div class="card p-3 text-center" style="width: 18rem">
+                <h5 class="card-title">HTML & CSS</h5>
+                <p class="card-text">
+                  Basis van front-end webontwikkeling met een oog voor detail en
+                  stijl.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Item 2 -->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <div class="card p-3 text-center" style="width: 18rem">
+                <h5 class="card-title">JavaScript</h5>
+                <p class="card-text">
+                  Ervaring met dynamische webfunctionaliteit en interactieve
+                  elementen.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Item 3 -->
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center">
+              <div class="card p-3 text-center" style="width: 18rem">
+                <h5 class="card-title">Python</h5>
+                <p class="card-text">
+                  Vaardig in back-end scripts en data-analyse met Python.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add more items here if needed -->
+        </div>
+
+        <!-- Carousel Controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#skillCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Vorige</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#skillCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Volgende</span>
+        </button>
+      </div>
+    </div>
+
+    <script src="/project2/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
