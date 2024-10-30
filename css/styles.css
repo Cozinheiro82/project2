@@ -64,6 +64,7 @@ p {
 }
 .navbar-collapse {
   background-color: #c6a42c;
+  z-index: 1000;
 }
 .nav-link {
   color: #131312;
@@ -106,7 +107,7 @@ p {
   border-color: #c6a42c;
   color: white;
 }
-/* Button color when clicked (active state) */
+
 .btn-primary:active,
 .btn-primary.active {
   background-color: #131312 !important;
@@ -117,6 +118,59 @@ p {
 .container {
   padding: 10% 0%;
 }
+
+/*hobby carrousel*/
+.carousel {
+  z-index: 1;
+}
+.carousel-inner img {
+  height: 700px;
+  width: 100%;
+  object-fit: cover;
+}
+.carousel-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel-description h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.carousel-description p {
+  font-size: 1em;
+  max-width: 700px;
+}
+@media (max-width: 768px) {
+  .carousel-inner img {
+    height: 300px;
+  }
+  .carousel-description h3 {
+    font-size: 1.5em;
+  }
+
+  .carousel-description p {
+    font-size: 0.9em;
+  }
+}
+@media (max-width: 576px) {
+  .carousel-description h3 {
+    font-size: 1.3em;
+  }
+
+  .carousel-description p {
+    font-size: 0.85em;
+  }
+}
+
 /* Card stijl */
 .card {
   background-color: #333;
@@ -147,13 +201,6 @@ p {
 .contact-wrap {
   max-width: 800px;
   margin: 0 auto;
-}
-/* waarschuwing bij niet invullen */
-#form-message-warning {
-  display: none;
-  color: red;
-  font-weight: bold;
-  margin-bottom: 15px;
 }
 
 /* Contact formulier */

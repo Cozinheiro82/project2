@@ -25,8 +25,6 @@
           <a href="#" class="navbar-brand">
             <img id="logoNav" src="/project2/images/logo.PNG" alt="Logo" />
           </a>
-
-          <!-- Hamburger Button for Small Screens -->
           <button
             class="navbar-toggler"
             type="button"
@@ -38,8 +36,6 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-
-          <!-- Links Wrapper -->
           <div class="collapse navbar-collapse" id="navbarNav">
             <nav class="nav nav-pills flex-column flex-sm-row">
               <a
@@ -53,7 +49,6 @@
                 href="#"
                 >Hobby & Interesses</a
               >
-
               <a
                 class="flex-sm-fill text-sm-center nav-link"
                 href="/project2/Curriculum.html"
@@ -75,15 +70,88 @@
       </div>
     </div>
     <div class="container">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-        ducimus, soluta adipisci eveniet distinctio facilis in ipsam minima
-        expedita quaerat, temporibus, omnis blanditiis odit sequi vitae aut
-        totam laboriosam. Itaque.
-      </p>
+      <h2>Ontdek Mijn hobbies & Interesses</h2>
+      <div
+        id="carouselExampleControlsNoTouching"
+        class="carousel slide"
+        data-bs-touch="false"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="/project2/images/Capoeira-unsplash.jpg"
+              class="d-block w-100"
+              alt="Capoeira"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/project2/images/duiken.JPG"
+              class="d-block w-100"
+              alt="Duiken"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/project2/images/playstation-unsplash.jpg"
+              class="d-block w-100"
+              alt="PlayStation Gaming"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/project2/images/binge-unsplash.jpg"
+              class="d-block w-100"
+              alt="Binge Watching"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/project2/images/vr-unsplash.jpg"
+              class="d-block w-100"
+              alt="Virtual Reality"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="/project2/images/programming-unsplash.jpg"
+              class="d-block w-100"
+              alt="Programming"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControlsNoTouching"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControlsNoTouching"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Dynamic description area -->
+      <div class="carousel-description">
+        <h3 id="carousel-heading">Capoeira</h3>
+        <p id="carousel-text">
+          Van mijn 15e tot mijn 25e was ik actief bezig met Capoeira, een
+          kunstvorm die vechtsport en dans met elkaar verweeft.
+        </p>
+      </div>
     </div>
 
     <script src="/project2/js/bootstrap.min.js"></script>
+    <script src="/project2/js/carrousel.js"></script>
   </body>
   <footer
     class="container-fluid py-3"
