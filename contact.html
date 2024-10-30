@@ -2,19 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/project2/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/project2/css/styles.css" />
-    <title>Danny Veugelen - Contact</title>
+    <title>Danny Veugelen - Index</title>
     <link
       rel="icon"
       type="image/x-icon"
@@ -28,6 +25,8 @@
           <a href="#" class="navbar-brand">
             <img id="logoNav" src="/project2/images/logo.PNG" alt="Logo" />
           </a>
+
+          <!-- Hamburger Button for Small Screens -->
           <button
             class="navbar-toggler"
             type="button"
@@ -39,6 +38,8 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+
+          <!-- Links Wrapper -->
           <div class="collapse navbar-collapse" id="navbarNav">
             <nav class="nav nav-pills flex-column flex-sm-row">
               <a
@@ -70,118 +71,119 @@
             </nav>
           </div>
         </nav>
-        <section class="ftco-section">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-md-6 text-center mb-5">
-                <h2 class="heading-section">Contact Formulier</h2>
-              </div>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-lg-10 col-md-12">
-                <div class="wrapper">
-                  <div class="contact-wrap w-100 p-md-5 p-4">
-                    <h3 class="mb-4">Contacteer ons</h3>
-                    <div id="form-message-warning" class="mb-4"></div>
-                    <div id="form-message-success" class="mb-4">
-                      Je bericht werd verzonden!
-                    </div>
-                    <form method="POST" id="contactForm" name="contactForm">
-                      <div class="row">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <input
-                              type="text"
-                              class="form-control"
-                              name="name"
-                              id="name"
-                              placeholder="Naam"
-                              required
-                            />
-                          </div>
-                        </div>
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <input
-                              type="email"
-                              class="form-control"
-                              name="email"
-                              id="email"
-                              placeholder="Email"
-                              required
-                            />
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            <label for="interest">Interesse</label>
-                            <select
-                              class="form-control"
-                              name="interest"
-                              id="interest"
-                              required
-                            >
-                              <option value="" disabled selected>
-                                Kies de skill waar je vraag over gaat
-                              </option>
-                              <option value="web">Webdesign</option>
-                              <option value="cSharp">C#</option>
-                              <option value="JavaScript">JavaScript</option>
-                              <option value="andere">Andere</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            <textarea
-                              name="message"
-                              class="form-control"
-                              id="message"
-                              cols="30"
-                              rows="7"
-                              placeholder="Uw bericht"
-                              required
-                            ></textarea>
-                          </div>
-                        </div>
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            <input
-                              type="submit"
-                              value="Verzenden"
-                              class="btn btn-primary"
-                            />
-                            <div class="submitting"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
       </div>
     </div>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/main.js"></script>
-    <script>
-      document
-        .getElementById("contactForm")
-        .addEventListener("submit", function (event) {
-          const form = event.target;
-          if (!form.checkValidity()) {
-            event.preventDefault(); // Prevent form from submitting
-            document.getElementById("form-message-warning").textContent =
-              "Vul alle velden in.";
-            document.getElementById("form-message-warning").style.display =
-              "block";
-          }
-        });
-    </script>
+    <div class="container">
+      <h2>Contacteer me voor vragen of offerte</h2>
+      <div class="row">
+        <div class="col-md-9">
+          <form action="https://tm-statweb.be/forms.php" method="post">
+            <div>
+              <label for="naam">Naam :</label>
+              <input type="text" id="naam" name="naam" required />
+            </div>
+            <div>
+              <label for="email">E-mail :</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div>
+              <label for="onderwerp">Onderwerp :</label>
+              <select id="onderwerp" name="onderwerp">
+                <option value="choose" disabled selected>
+                  Kies een skill waarover je vraag gaat
+                </option>
+                <option value="Webdesign">Webdesign</option>
+                <option value="app_development">App Development</option>
+                <option value="cSharp">C#</option>
+                <option value="JavaScript">JavaScript</option>
+              </select>
+            </div>
+            <div>
+              <label for="inhoud">Uw vraag :</label>
+              <textarea name="inhoud" cols="40" rows="5" required></textarea>
+            </div>
+            <div>
+              <label for="verzenden">
+                <input
+                  type="submit"
+                  value="Verzenden"
+                  id="verzenden"
+                  name="verzenden"
+                />
+              </label>
+            </div>
+          </form>
+        </div>
+        <div id="adreskaart" class="col-md-3">
+          <div class="card" style="width: 15rem">
+            <img
+              src="/project2/images/danny.PNG"
+              class="card-img-top"
+              alt="foto van mezelf"
+            />
+            <div class="card-body">
+              <p class="card-text">
+                Danny Veugelen <br />
+                Aarschot <br />
+                0472 36 00 08 <br />
+                danny@cozinheiro.be
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/project2/js/bootstrap.min.js"></script>
   </body>
+  <footer
+    class="container-fluid py-3"
+    id="footer"
+    style="background-color: #222; color: #fff"
+  >
+    <div class="row">
+      <div class="col-12 col-md-6 text-center text-md-start mb-2 mb-md-0">
+        <div>&copy; 2024 Danny Veugelen</div>
+      </div>
+      <div class="col-12 col-md-6 text-center text-md-end">
+        <a
+          class="footerLink"
+          href="https://www.facebook.com/danny.veugelen"
+          target="_blank"
+          style="margin-right: 10px"
+        >
+          <img
+            src="/project2/images/Facebook_Logo_Primary.png"
+            alt="Facebook"
+            width="24"
+            height="24"
+          />
+        </a>
+        <a
+          class="footerLink"
+          href="https://www.instagram.com/danny_veugelen/"
+          target="_blank"
+          style="margin-right: 10px"
+        >
+          <img
+            src="/project2/images/Instagram_Glyph_Gradient.png"
+            alt="Instagram"
+            width="24"
+            height="24"
+          />
+        </a>
+        <a
+          class="footerLink"
+          href="https://www.linkedin.com/in/danny-veugelen-57a54b67/"
+          target="_blank"
+        >
+          <img
+            src="/project2/images/LI-In-Bug.png"
+            alt="LinkedIn"
+            width="24"
+            height="24"
+          />
+        </a>
+      </div>
+    </div>
+  </footer>
 </html>

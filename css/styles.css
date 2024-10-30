@@ -2,8 +2,9 @@ body {
   background-color: #131312;
   font-family: Montserrat, sans-serif;
 }
+
 h1 {
-  font-size: 8vw; /*past aan an grootte scherm*/
+  font-size: 6vw; /*past aan an grootte scherm*/
   /*font-size: 96px;*/
   font-weight: 800;
   color: #ffffff;
@@ -15,6 +16,7 @@ h2 {
   font-weight: 600;
   color: #f3f3ed;
   text-align: center;
+  padding: 6% 0%;
 }
 
 h3,
@@ -84,6 +86,10 @@ p {
   margin-top: 0;
   padding-top: 0;
 }
+#form {
+  position: relative;
+  top: 0;
+}
 /* Aangepaste stijl voor de submit-knop */
 .btn-primary {
   background-color: #c6a42c;
@@ -108,6 +114,9 @@ p {
   color: #c6a42c !important;
 }
 /* homepage*/
+.container {
+  padding: 10% 0%;
+}
 /* Card stijl */
 .card {
   background-color: #333;
@@ -146,4 +155,96 @@ p {
   font-weight: bold;
   margin-bottom: 15px;
 }
+
+/* Contact formulier */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #222a27;
+  border-radius: 8px;
+}
+
+form div {
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+form label {
+  width: 150px;
+  margin-right: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form select {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #c6a42c;
+  border-radius: 4px;
+}
+
+form input[type="submit"] {
+  background-color: #c6a42c;
+  color: #000000;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background-color: #222a27;
+}
+#adreskaart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+
+  border-radius: 8px;
+}
+/* Responsive op telefoon*/
+@media (max-width: 600px) {
+  form {
+    padding: 15px;
+  }
+
+  form div {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  form label {
+    width: 100%;
+    margin: 0 0 5px;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form textarea,
+  form select {
+    width: 100%;
+  }
+
+  form input[type="submit"] {
+    width: 100%;
+    margin-top: 10px;
+  }
+  div {
+    padding: 0% 2%;
+  }
+}
+
 /* Footer*/
+.footerLink {
+  text-decoration: none;
+}
