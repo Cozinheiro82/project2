@@ -368,7 +368,7 @@ form input[type="submit"]:hover {
 /* Responsive op telefoon*/
 @media (max-width: 600px) {
   form {
-    padding: 15px;
+    padding: 15% 0%;
   }
 
   form div {
