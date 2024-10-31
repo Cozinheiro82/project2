@@ -196,6 +196,13 @@ p {
 }
 
 /*cv*/
+#resumefoto {
+  width: 100%;
+  height: 250px;
+  object-fit: scale-down;
+  padding-bottom: 50px;
+}
+
 .resume-section {
   padding: 40px 0;
   color: #e0e0e0;
@@ -203,7 +210,7 @@ p {
 
 .section-title {
   font-size: 24px;
-  color: #f0f0f0;
+  color: #c6a42c;
   margin-bottom: 20px;
   border-bottom: 2px solid #555;
   padding-bottom: 10px;
@@ -249,7 +256,7 @@ p {
 
 .time-line-item-title {
   font-size: 18px;
-  color: #f0f0f0;
+  color: #c6a42c;
   margin-bottom: 4px;
 }
 
@@ -262,6 +269,27 @@ p {
 .time-line-item-content {
   font-size: 14px;
   color: #ddd;
+}
+#skillDiv {
+  text-align: center;
+}
+.sliderImage {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  margin: 30px 0;
+}
+.slider {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+@media only screen and (max-width: 768px) {
+  .sliderImage {
+    width: 100%;
+    height: 50px;
+    object-fit: contain;
+  }
 }
 
 /* contact pagina*/
@@ -366,4 +394,8 @@ form input[type="submit"]:hover {
 /* Footer*/
 .footerLink {
   text-decoration: none;
+}
+#footer {
+  background-color: #222;
+  color: #fff;
 }
