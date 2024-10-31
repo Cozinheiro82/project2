@@ -11,7 +11,7 @@
     />
     <link rel="stylesheet" href="/project2/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/project2/css/styles.css" />
-    <title>Danny Veugelen - Hobby & Interesses</title>
+    <title>Danny Veugelen - Projecten</title>
     <link
       rel="icon"
       type="image/x-icon"
@@ -25,6 +25,8 @@
           <a href="/project2/index.html" class="navbar-brand">
             <img id="logoNav" src="/project2/images/logo.PNG" alt="Logo" />
           </a>
+
+          <!-- Hamburger Button for Small Screens -->
           <button
             class="navbar-toggler"
             type="button"
@@ -36,17 +38,19 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+
+          <!-- Links Wrapper -->
           <div class="collapse navbar-collapse" id="navbarNav">
             <nav class="nav nav-pills flex-column flex-sm-row">
               <a
                 class="flex-sm-fill text-sm-center nav-link"
+                aria-current="page"
                 href="/project2/index.html"
                 >Home</a
               >
               <a
-                class="flex-sm-fill text-sm-center nav-link active"
-                aria-current="page"
-                href="#"
+                class="flex-sm-fill text-sm-center nav-link"
+                href="/project2/hobby.html"
                 >Hobby & Interesses</a
               >
               <a
@@ -60,8 +64,9 @@
                 >Contact</a
               >
               <a
-                class="flex-sm-fill text-sm-center nav-link"
-                href="/project2/projecten.html"
+                class="flex-sm-fill text-sm-center nav-link active"
+                aria-current="page"
+                href="#"
                 >Projecten</a
               >
             </nav>
@@ -69,86 +74,81 @@
         </nav>
       </div>
     </div>
-    <div class="container">
-      <h2>Mijn hobby's & Interesses</h2>
-      <div
-        id="carouselExampleControlsNoTouching"
-        class="carousel slide"
-        data-bs-touch="false"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="/project2/images/Capoeira-unsplash.jpg"
-              class="d-block w-100"
-              alt="CapoeiraAfbeelding"
-            />
+    <main>
+      <div class="container">
+        <h3>Mijn Projecten</h3>
+        <div class="row project-card-container">
+          <div class="col-12 col-md-4 project-card">
+            <div class="card">
+              <img
+                src="/project2/images/screensProjecten/taxiprijs.png"
+                class="card-img-top"
+                alt="screenshotTaxiApp"
+              />
+              <div class="card-body">
+                <h5 class="card-title">JavaScript Taxiprijs</h5>
+                <p class="card-text">
+                  Een simpele tool die de prijs berekent van een taxirit volgens
+                  het aantal kilometers, rijtijd en wachttijd.
+                </p>
+                <a
+                  href="https://cozinheiro.be/taxiberekening/"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Open Project</a
+                >
+              </div>
+            </div>
           </div>
-          <div class="carousel-item">
-            <img
-              src="/project2/images/duiken.JPG"
-              class="d-block w-100"
-              alt="Foto van Duiken"
-            />
+          <div class="col-12 col-md-4 project-card">
+            <div class="card">
+              <img
+                src="/project2/images/screensProjecten/timer.png"
+                class="card-img-top"
+                alt="timerApp"
+              />
+              <div class="card-body">
+                <h5 class="card-title">JavaScript ExamenTimer</h5>
+                <p class="card-text">
+                  Een JavaScript Timer die een examinator voor Rijbewijs D kan
+                  gebruiken om het examen te timen. Per oefening start een timer
+                  die automatisch rood wordt wanneer de cursist over zijn
+                  toegestane tijd gaat.
+                </p>
+                <a
+                  href="http://cozinheiro.be/timer/"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Open Project</a
+                >
+              </div>
+            </div>
           </div>
-          <div class="carousel-item">
-            <img
-              src="/project2/images/playstation-unsplash.jpg"
-              class="d-block w-100"
-              alt="PlayStation Gaming"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/project2/images/binge-unsplash.jpg"
-              class="d-block w-100"
-              alt="Binge Watching"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/project2/images/vr-unsplash.jpg"
-              class="d-block w-100"
-              alt="Virtual Reality"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="/project2/images/programming-unsplash.jpg"
-              class="d-block w-100"
-              alt="Programming"
-            />
+          <div class="col-12 col-md-4 project-card">
+            <div class="card">
+              <img
+                src="/project2/images/screensProjecten/vdabquiz.png"
+                class="card-img-top"
+                alt="quiz Rijbewijs"
+              />
+              <div class="card-body">
+                <h5 class="card-title">VDAB Quiz</h5>
+                <p class="card-text">
+                  Kleine quiz in JavaScript om kennis over EcoRijden te testen
+                  bij VDAB.
+                </p>
+                <a
+                  href="http://cozinheiro.be/vdabquiz/quiz.html"
+                  target="_blank"
+                  class="btn btn-primary"
+                  >Open Project</a
+                >
+              </div>
+            </div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleControlsNoTouching"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleControlsNoTouching"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-
-      <!-- Dynamic description area -->
-      <div class="carousel-description">
-        <h3 id="carousel-heading">Capoeira</h3>
-        <p id="carousel-text">
-          Van mijn 15e tot mijn 25e was ik actief bezig met Capoeira, een
-          kunstvorm die vechtsport en dans met elkaar verweeft.
-        </p>
-      </div>
-    </div>
+    </main>
     <footer
       class="container-fluid py-3"
       id="footer"
@@ -201,6 +201,5 @@
       </div>
     </footer>
     <script src="/project2/js/bootstrap.min.js"></script>
-    <script src="/project2/js/carrousel.js"></script>
   </body>
 </html>

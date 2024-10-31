@@ -28,6 +28,7 @@ h4 {
 h3 {
   font-size: 28px;
   text-align: center;
+  padding-bottom: 40px;
 }
 
 h4 {
@@ -62,6 +63,7 @@ p {
   color: #131312;
   font-weight: bold;
 }
+
 .navbar-collapse {
   background-color: #c6a42c;
   z-index: 1000;
@@ -181,6 +183,7 @@ p {
   color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 70%;
 }
 .card-img-top {
   border-top-left-radius: 8px;
@@ -200,7 +203,7 @@ p {
   width: 100%;
   height: 250px;
   object-fit: scale-down;
-  padding-bottom: 50px;
+  padding-bottom: 0px;
 }
 
 .resume-section {
@@ -346,6 +349,9 @@ form input[type="submit"] {
   cursor: pointer;
   transition: background-color 0.3s;
 }
+#onderwerp {
+  color: #000000;
+}
 
 form input[type="submit"]:hover {
   background-color: #222a27;
@@ -390,7 +396,24 @@ form input[type="submit"]:hover {
     padding: 0% 2%;
   }
 }
+/* Projecten */
+/* container voor de projecten */
+.project-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
 
+.project-card {
+  flex: 1 1 calc(33.333% - 16px); /* Drie kaarten naast elkaar op grote schermen */
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    flex: 1 1 100%; /* Kaarten onder elkaar op kleinere schermen */
+  }
+}
 /* Footer*/
 .footerLink {
   text-decoration: none;
