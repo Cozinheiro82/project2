@@ -63,6 +63,9 @@ p {
   color: #131312;
   font-weight: bold;
 }
+.navbar-toggler {
+  border: none;
+}
 
 .navbar-collapse {
   background-color: #c6a42c;
@@ -185,6 +188,14 @@ p {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   max-width: 70%;
 }
+@media (max-width: 768px) {
+  .card {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+  }
+}
+
 .card-img-top {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -311,7 +322,7 @@ form {
   display: flex;
   flex-direction: column;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 10% auto;
   padding: 20px;
   background-color: #222a27;
   border-radius: 8px;
